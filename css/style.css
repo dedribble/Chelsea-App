@@ -15,8 +15,8 @@ body {
 .top-nav {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
-    padding: 14px 12px;
+    background-color: #001489;
+    padding: 16px 12px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -49,8 +49,33 @@ main {
 
 main > .latest {
     width: 100%;
-    height: 350px;
-    background-color: black;
+    height: 360px;
+    background-image: url("../images/E08u3syXMAMa49-.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+main > .latest > .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    padding: 12px;
+}
+
+main > .latest > .title > h3 {
+    color: #fff1f1;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+main > .latest > .title > a {
+    font-size: 12px;
+    color: #fff;
 }
 
 main > .other-feed {
@@ -62,7 +87,6 @@ main > .other-feed > div {
     height: 300px;
     background-color: black;
     margin: 20px 0px;
-
 }
 
 
@@ -74,7 +98,7 @@ main > .other-feed > div {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: blue;
+    background-color:#001489;
     position: sticky;
     bottom: 0px;
 }
@@ -84,15 +108,16 @@ main > .other-feed > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6px 10px;
+    padding: 8px 12px;
     justify-content: center;
-    background-color: blue;
+    background-color: #001489;
     border: none;
     outline: none;
 }
 
 .bottom-nav > .menu.active {
-    background-color: rgb(55, 55, 255);
+    background-color: 
+    #0033ff;
 }
 
 .bottom-nav > .menu > .icons {
@@ -110,5 +135,5 @@ main > .other-feed > div {
 .bottom-nav > .menu > .description {
     color: #fff;
     font-size: 10px;
-    font-weight: 100;
+    font-weight: 300;
 }
