@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    width: 100vw;
+}
+
+
+/* Top Header Styling */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #001489;
+    padding: 16px 12px;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.top-nav a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-nav .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.top-nav .profile-image img {
+    width: 100%;
+}
+
+
+/* Main Styling */
+main {
+    width: 100vw;
+    position: relative;
+}
+
+main > .tab {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+}
+
+main > .tab > .men-women-academy {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 14px;
+    border-bottom: 3px solid #e2e2e2;
+}
+
+main > .tab > .men-women-academy > .box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e4ee;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+main > .tab > .men-women-academy > .box > .card {
+    width: 110px;
+    padding: 8px 16px;
+    color: #001489;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+main > .tab > .men-women-academy > .box > .card.active {
+    background-color: #0033ff;
+    color: #fff;
+}
+
+main > .tab > .frt {
+    width: 100%;
+    border-bottom: 3px solid #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > .tab > .frt > .frt-box {
+    width: 125px;
+    background-color: transparent;
+    color: #001489;
+    border: 0;
+    outline: 0;
+    padding: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    left: 0px;
+}
+
+main > .tab > .frt > .frt-box.active {
+    border-bottom: 3px solid #0033ff;
+    color: #0033ff; 
+}
+
+main > .rank {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-bottom: 190px;
+}
+
+main > .rank > .group {
+    width: 100vw;
+    padding: 0 12px;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    transition: all 1s ease-in-out;
+}
+
+main > .rank > .group.active {
+    right: 0px;
+}
+
+main > .rank > .group > .fixtures {
+    width: 100%;
+    
+}
+
+main > .rank > .group > .fixtures > h1 {
+    color: #001489;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 16px 0px;
+}
+
+main > .rank > .group > .fixtures > .schedule {
+    background-color: #f1f5fc;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+main > .rank > .group > .fixtures > .schedule::after {
+    content: "";
+    position:absolute;
+    width: 100vh;
+    height: 60px;
+    bottom: 4px;
+    left: 0;
+    transform: rotate(172deg);
+    background-color: #e3e4ee;
+}
+
+main > .rank > .group > .fixtures > .schedule > .competition {
+    color: #001489;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main > .rank > .group > .fixtures > .schedule > .venue {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+main > .rank > .group > .fixtures > .schedule > .date-time {
+    font-size: 14px;
+    font-weight:400;
+    line-height: 12px;
+    margin-bottom: 16px;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .clubs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .clubs > .team {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .clubs > .team > .badge {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .clubs > .team > .badge > svg {
+    width: 100%;
+    height: 100%;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .clubs > .team > p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: #001489;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .clubs > .team > .badge > img {
+    width: 100%;
+    height: 100%;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .date-details {
+    display: grid;
+    place-items: center;
+    margin-right: 20px;
+    position: absolute;
+    top: 12px;
+    right:0px;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .date-details > .date {
+    font-size: 30px;
+    font-weight: 600;
+    color:#001489 ;
+}
+
+main > .rank > .group > .fixtures > .schedule > .clubs-date > .date-details > .day {
+    font-size: 12px;
+    line-height: 0px;
+    color: #001489;
+    font-weight: 600;
+}
+
+
+
+
+/* Bottom navigation Styling */
+.bottom-nav {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color:#001489;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.bottom-nav > .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    justify-content: center;
+    background-color: #001489;
+    border: none;
+    outline: none;
+}
+
+.bottom-nav > .menu.active {
+    background-color: 
+    #0033ff;
+}
+
+.bottom-nav > .menu > .icons {
+    display: grid;
+    place-items: center;
+    margin-bottom: 8px;
+}
+
+.bottom-nav > .menu > .icons > svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.bottom-nav > .menu > .description {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 300;
+}

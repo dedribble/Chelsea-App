@@ -132,16 +132,14 @@ main > .other-feed > .feed > .headline > span, a {
 }
 
 
-
-
-
+/* Bottom navigation Styling */
 
 .bottom-nav {
     width: 100%;
     display: flex;
     align-items: center;
     background-color:#001489;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
 }
 
